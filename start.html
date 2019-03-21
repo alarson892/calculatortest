@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>The Start</title>
+    <script>
+      function buttonStuff(){
+        alert("here are the goods");
+      }
+
+      function addingStuff(){
+        var num1 = prompt("What is the first number, my dude?");
+        var num2 = prompt("Give me the second number, bitch boi");
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        alert(num1 + num2);
+      }
+      function fancyAdd(){
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var result = num1 + num2;
+        document.getElementById("span").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    The stuff, man
+    <br>
+    Give me the goods
+    <br>
+
+    <input type = button value = "The Goods" onclick = "buttonStuff()">
+    <input type = button value = "Just Adding, Man" onclick = "addingStuff()"><br>
+    <input type = text value = "Number 1" id = "number1">
+    <input type = text value = "Number 2" id = "number2">
+    <br>
+    <input type = button value = "Fancy Adding, bitchboy" onclick = "fancyAdd()">
+
+
+    <span id = "span">
+    </span>
+  </body>
+</html>
