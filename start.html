@@ -19,7 +19,31 @@
         num1 = parseInt(num1);
         num2 = parseInt(num2);
         var result = num1 + num2;
-        document.getElementById("span").innerHTML = result;
+        document.getElementById("answer").innerHTML = result;
+      }
+      function fancySub(){
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var result = num1 - num2;
+        document.getElementById("answer").innerHTML = result;
+      }
+      function fancyMult(){
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var result = num1 * num2;
+        document.getElementById("answer").innerHTML = result;
+      }
+      function fancyDiv(){
+        var num1 = document.getElementById("number1").value;
+        var num2 = document.getElementById("number2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        var result = num1 / num2;
+        document.getElementById("answer").innerHTML = result;
       }
     </script>
   </head>
@@ -34,10 +58,12 @@
     <input type = text value = "Number 1" id = "number1">
     <input type = text value = "Number 2" id = "number2">
     <br>
-    <input type = button value = "Fancy Adding, bitchboy" onclick = "fancyAdd()">
-
-
-    <span id = "span">
+    <input type = button value = "+" onclick = "fancyAdd()">
+    <input type = button value = "-" onclick = "fancySub()">
+    <input type = button value = "*" onclick = "fancyMult()">
+    <input type = button value = "/" onclick = "fancyDiv()">
+    <br> 
+    <span id = "answer">
     </span>
   </body>
 </html>
